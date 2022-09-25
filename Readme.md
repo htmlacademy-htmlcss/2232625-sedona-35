@@ -1,9 +1,9 @@
 # Личный проект «Седона»
 
 * Студент: [Vadim Novikov](https://up.htmlacademy.ru/htmlcss/35/user/2232625).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Жилин](https://htmlacademy.ru/profile/andreyka).
 
----
+
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
