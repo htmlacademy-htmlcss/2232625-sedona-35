@@ -1,0 +1,35 @@
+body {
+    font-family: 'PT Sans', serif;
+    display: flex;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  align-self: auto ;
+  width: auto;
+  width: 100%;
+}
+nav{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    padding-top: 20px;
+}
+.logo {
+    margin-left: 70px;
+    height: 70.05px;
+    width: 140px;
+}
+
+section.sedona-canyon {
+    display: flex;
+    flex-direction: row;
+width: auto;
+}
