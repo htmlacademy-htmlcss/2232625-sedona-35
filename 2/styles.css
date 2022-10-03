@@ -1,0 +1,40 @@
+body {
+    font-family: 'PT Sans', serif;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  align-self: auto ;
+  width: auto;
+  width: 100%;
+}
+nav{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    padding-top: 20px;
+}
+.logo {
+    margin-left: 70px;
+    height: 70.05px;
+    width: 140px;
+}
+
+.page-main{
+    background-image: url(index-background.png);
+    background-size: 1200px 485px;
+    background-repeat: no-repeat;
+}
+.welcome-sedona{
+    padding-left: 371px;
+    padding-right: 371px;
+    padding-bottom: 20px;
+    padding-top: 51px;
+}
