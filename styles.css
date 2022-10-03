@@ -1,6 +1,5 @@
 body {
     font-family: 'PT Sans', serif;
-    display: flex;
 }
 header {
     display: flex;
@@ -28,8 +27,14 @@ nav{
     width: 140px;
 }
 
-section.sedona-canyon {
-    display: flex;
-    flex-direction: row;
-width: auto;
+.page-main{
+    background-image: url(index-background.png);
+    background-size: 1200px 485px;
+    background-repeat: no-repeat;
+}
+.welcome-sedona{
+    padding-left: 371px;
+    padding-right: 371px;
+    padding-bottom: 20px;
+    padding-top: 51px;
 }
