@@ -1,0 +1,232 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+/*index*/
+
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+}
+
+button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  background-color: #756157;
+}
+
+.navigation-link {
+  font-family: "PT Sans", sans-serif;
+  line-height: 24px;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.page-main {
+  background-image: url("../images/index-background.jpg");
+  background-color: #000000;
+  background-repeat: no-repeat;
+  height: 485px;
+  width: 1200px;
+}
+
+.main-header {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.sedona-description {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.dark-blue {
+  color: #ffffff;
+  background-color: #82b3d3;
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.advantages-description {
+  font-weight: 400;
+}
+.sedona-city {
+  background-color: #83b3d3;
+  background-size: 100% auto;
+}
+
+.sedona-description-advantages-house {
+  font-weight: 400;
+}
+
+.sedona-description-advantages {
+  font-weight: 400;
+}
+
+.benefits-white {
+  background-color: #ffffff;
+}
+
+.benefits-dark-sky-blue {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.benefits-sky-blue {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.sedona-interest {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.subscribe {
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url("../images/background-blur.jpg");
+  background-repeat: no-repeat;
+  height: 415px;
+  width: 1200px;
+}
+.subscribe-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.subscribe-description {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.field {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.newsletter-button {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #82b3d3;
+}
+.footer-social-vk {
+  background-image: url("../images/social-vk.svg");
+  width: 24px;
+  height: 14px;
+}
+.footer-social-tg {
+  background-image: url("../images/social-telegram.svg");
+  width: 18px;
+  height: 16px;
+}
+.footer-social-ut {
+  background-image: url("../images/social-youtube.svg");
+  width: 22px;
+  height: 17px;
+}
+.phone-number {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+/*Catalog*/
+
+.sedona-hotels-filter {
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url("../images/catalog-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sedona-hotels-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+}
+.breadcrumbs-link {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.hotels-card-link {
+  color: #000000;
+  background-color: #ffffff;
+}
+.hotels-card-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+.hotels-card-more {
+  background-color: #756157;
+}
+.button + .hotels-card-favorites {
+  background-color: #82b3d3;
+}
+.button + .hotels-card-favorites-checked {
+  background-color: #7db54f;
+}
+.hotels-rating {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #333;
+  background-color: #f2f2f2;
+}
+.pagination-link {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #82b3d3;
+}
+.pagination-current {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+.white-background {
+  background-image: none;
+  background-color: #ffffff;
+}
+.subscribe-black {
+  color: #000000;
+}
+.subscribe-grey {
+  color: #333;
+}
