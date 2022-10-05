@@ -181,12 +181,24 @@ button {
 }
 .hotels-card-more {
   background-color: #756157;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
 }
 .button + .hotels-card-favorites {
   background-color: #82b3d3;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
 }
 .button + .hotels-card-favorites-checked {
   background-color: #7db54f;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
 }
 .hotels-rating {
   font-size: 16px;
