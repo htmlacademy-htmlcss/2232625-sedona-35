@@ -33,6 +33,12 @@ body {
   background-color: #ffffff;
   font-family: "PT Sans", sans-serif;
 }
+.page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+align-self: auto ;
+}
 
 .container {
   width: 1200px;
@@ -65,11 +71,12 @@ button {
   text-transform: uppercase;
   border-radius: 4px;
   width: 160px;
-  height: 37px;
+  height: 36px;
   border: none;
   cursor: pointer;
   box-sizing: border-box;
 }
+
 
 .navigation {
   display: flex;
@@ -78,11 +85,15 @@ button {
 }
 
 .page-header-logo {
-  padding-left: 70px;
+  margin-left: 70px;
+  height: 70.05px;
+  width: 140px;
 }
 
 .navigation-list {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 339px;
   height: 64px;
@@ -93,7 +104,6 @@ button {
 }
 .navigation-link {
   display: block;
-  padding: 20px 17px;
   font-family: "PT Sans", sans-serif;
   line-height: 24px;
   font-weight: 700;
@@ -104,12 +114,27 @@ button {
   text-decoration: none;
   position: relative;
 }
+.homepage{
+  height: 64px;
+  width: 100px;
+  padding: 20px 16px;
+}
+.about-sedone{
+  width: 114px;
+  height: 64px;
+  padding: 20px 16px;
+}
+.hotels{
+  width: 125px;
+  height: 64px;
+  padding: 20px 16px;
+}
 .navigation-user {
   display: flex;
   align-items: center;
-  max-width: 300px;
+  max-width: 268px;
   margin: 0;
-  padding: 0 70px 0 237px;
+  padding: 0 70px 0 285px;
 }
 
 .page-main {
