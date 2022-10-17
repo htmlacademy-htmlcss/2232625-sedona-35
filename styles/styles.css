@@ -196,6 +196,7 @@ flex-direction: row;
 flex-wrap: wrap;
 justify-content: space-between;
   list-style-type: none;
+  padding: 0;
 }
 
 .advantages-item {
@@ -215,9 +216,22 @@ justify-content: space-between;
   font-weight: 700;
   text-transform: uppercase;
 }
-.natural-city{
+.advantages-title-benefits {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 182px;
+}
+
+.flex-box{
   width: 400px;
   height: 384px;
+
+}
+.benefits-flex-box{
+width: 400px;
+height: 384px;
 }
 .white {
   padding-top: 92px;
@@ -233,32 +247,33 @@ justify-content: space-between;
 }
 
 .vector-house {
-  padding-top: 80px;
+  background-image: url("../images/cottadge.svg");
+  background-repeat: no-repeat;
+background-position: center top 80px;
 }
-
 .vector-food {
-  padding-top: 81px;
+  background-image: url("../images/burger.svg");
+  background-repeat: no-repeat;
+background-position: center top 80px;
 }
 
 .vector-souvenirs {
-  padding-top: 78px;
-}
-
-.sedona-description-advantages-house {
-  font-weight: 400;
-  padding-bottom: 81px;
-  width: 190px;
+  background-image: url("../images/souvenirs.svg");
+  background-repeat: no-repeat;
+background-position: center top 80px;
 }
 
 .sedona-description-advantages {
   font-weight: 400;
-  padding-bottom: 81px;
   width: 230px;
+  margin: 0;
+  padding: 0 85px 81px;
 }
 
 .sedona-city {
   background-color: #83b3d3;
   margin: 0;
+ display: block;
 }
 
 .benefits-white {
@@ -275,7 +290,6 @@ justify-content: space-between;
 .devils-bridge {
   background-color: #ffffff;
   background-size: 100% auto;
-  grid-area: devils-bridge;
 }
 .sedona-sity img,
 .devils-bridge img {
@@ -287,24 +301,44 @@ justify-content: space-between;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 417px;
+  height: 406px;
   text-align: center;
 }
 .interest {
-  margin-top: 91px;
-  margin-bottom: 29px;
+  width: 297px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .sedona-interest {
   font-size: 22px;
   line-height: 26px;
+  margin: 0;
+  width: 592px;
 }
 .interest-button {
-  width: 574px;
-  height: 60px;
-  margin-top: 56px;
-  margin-bottom: 93px;
+  width: 375px;
+  height: 52px;
+  margin-top: 54px;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
 }
+
 .subscribe {
   display: flex;
   flex-direction: column;
@@ -314,9 +348,11 @@ justify-content: space-between;
   background-color: #000000;
   background-image: url("../images/background-blur.jpg");
   background-repeat: no-repeat;
-  height: 415px;
-  width: 1200px;
+  background-position: top;
+  background-size: cover;
+  height: 415px auto;
   text-align: center;
+  margin: 0;
 }
 .subscribe-title {
   font-size: 30px;
@@ -324,14 +360,17 @@ justify-content: space-between;
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
-  margin-top: 94px;
-  margin-bottom: 29px;
+  padding-top: 94px;
+  padding-bottom: 20px;
+  margin: 0;
+  width: 404px;
 }
 .newsletter-form {
   display: flex;
   align-items: center;
-  margin-top: 46px;
-  margin-bottom: 94px;
+  margin-bottom: 104px;
+  width: 684px;
+  height: 52px;
 }
 
 .subscribe-description {
@@ -339,6 +378,8 @@ justify-content: space-between;
   line-height: 26px;
   color: #ffffff;
   width: 475px;
+  padding-bottom: 54px;
+  margin: 0;
 }
 .field {
   font-size: 18px;
@@ -369,16 +410,17 @@ justify-content: space-between;
   justify-content: space-between;
   align-items: center;
   width: 1060px;
-  margin: 0 auto;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  height: 120px;
+  margin: 0;
+  padding: 45px 70px 35px;
+
 }
 .footer-social-list {
-  margin-top: 5px;
-  margin-bottom: 5px;
   list-style-type: none;
 }
 .social-list {
+  width: 142px;
+  height: 40px;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -386,35 +428,25 @@ justify-content: space-between;
   list-style-type: none;
 }
 .footer-social-link {
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  list-style-type: none;
-  width: 48px;
+  width: 47px;
   height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer-social-vk {
-  background-image: url("../images/social-vk.svg");
-  width: 24px;
-  height: 14px;
-}
-.footer-social-tg {
-  background-image: url("../images/social-telegram.svg");
-  width: 18px;
-  height: 16px;
-}
-.footer-social-ut {
-  background-image: url("../images/social-youtube.svg");
-  width: 22px;
-  height: 17px;
-}
+
 .phone-number {
   font-size: 40px;
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
   display: block;
+  width: 331px;
+}
+.logo-html-academy{
+  width: 115px;
+  height: 33px;
 }
 /*Catalog*/
 
@@ -425,11 +457,13 @@ justify-content: space-between;
   background-size: cover;
   background-repeat: no-repeat;
   box-sizing: border-box;
-  height: 403px;
+  height: 412px;
   margin: 0;
   padding: 0;
 }
 .hotels-filter {
+  width: 1060px;
+  height: 307px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -440,30 +474,42 @@ justify-content: space-between;
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
+  height: 113px;
 }
 .sedona-hotels-title {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .breadcrumbs {
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  gap: 10px;
   list-style-type: none;
   padding: 0;
   margin: 0;
-  margin-left: 2px;
+  width: 114px;
+  height: 21px;
+  gap: 11px;
 }
 
 .breadcrumbs-link {
   color: #ffffff;
   text-decoration: none;
   display: block;
+}
+.breadcrumbs-link-homepage{
+  width: 13px;
+  height: 15px;
+}
+
+.breadcrumbs-link-hotels{
+  width: 73px;
+  height: 21px;
 }
 .catalog-main-filter {
   display: flex;
