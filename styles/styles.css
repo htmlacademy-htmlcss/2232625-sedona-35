@@ -159,7 +159,6 @@ button {
   height: 352px;
   width: 458px;
   padding: 51px 371px 25px;
-
 }
 .main-header {
   font-size: 30px;
@@ -167,18 +166,16 @@ button {
   font-weight: 700;
 }
 
-.section-description{
+.section-description {
   width: 650px;
   height: 123px;
   text-align: center;
 
-padding: 69px 275px 90px;
-
+  padding: 69px 275px 90px;
 }
 .sedona-description {
   font-size: 22px;
   line-height: 26px;
-
 }
 
 .advantages {
@@ -191,10 +188,10 @@ padding: 69px 275px 90px;
 }
 
 .advantages-list {
-  display:  flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   list-style-type: none;
   padding: 0;
 }
@@ -224,14 +221,13 @@ justify-content: space-between;
   padding-top: 182px;
 }
 
-.flex-box{
+.flex-box {
   width: 400px;
   height: 384px;
-
 }
-.benefits-flex-box{
-width: 400px;
-height: 384px;
+.benefits-flex-box {
+  width: 400px;
+  height: 384px;
 }
 .white {
   padding-top: 92px;
@@ -249,18 +245,18 @@ height: 384px;
 .vector-house {
   background-image: url("../images/cottadge.svg");
   background-repeat: no-repeat;
-background-position: center top 80px;
+  background-position: center top 80px;
 }
 .vector-food {
   background-image: url("../images/burger.svg");
   background-repeat: no-repeat;
-background-position: center top 80px;
+  background-position: center top 80px;
 }
 
 .vector-souvenirs {
   background-image: url("../images/souvenirs.svg");
   background-repeat: no-repeat;
-background-position: center top 80px;
+  background-position: center top 80px;
 }
 
 .sedona-description-advantages {
@@ -273,7 +269,7 @@ background-position: center top 80px;
 .sedona-city {
   background-color: #83b3d3;
   margin: 0;
- display: block;
+  display: block;
 }
 
 .benefits-white {
@@ -413,7 +409,6 @@ background-position: center top 80px;
   height: 120px;
   margin: 0;
   padding: 45px 70px 35px;
-
 }
 .footer-social-list {
   list-style-type: none;
@@ -435,7 +430,6 @@ background-position: center top 80px;
   align-items: center;
 }
 
-
 .phone-number {
   font-size: 40px;
   line-height: 40px;
@@ -444,7 +438,7 @@ background-position: center top 80px;
   display: block;
   width: 331px;
 }
-.logo-html-academy{
+.logo-html-academy {
   width: 115px;
   height: 33px;
 }
@@ -502,12 +496,12 @@ background-position: center top 80px;
   text-decoration: none;
   display: block;
 }
-.breadcrumbs-link-homepage{
+.breadcrumbs-link-homepage {
   width: 13px;
   height: 15px;
 }
 
-.breadcrumbs-link-hotels{
+.breadcrumbs-link-hotels {
   width: 73px;
   height: 21px;
 }
@@ -544,14 +538,14 @@ background-position: center top 80px;
   gap: 16px;
 }
 
-.control{
+.control {
   display: flex;
   flex-direction: row;
   gap: 16px;
   width: 115px;
   height: 23px;
 }
-.catalog-filter-type-house{
+.catalog-filter-type-house {
   display: flex;
   flex-direction: column;
   width: 150px;
@@ -572,23 +566,23 @@ background-position: center top 80px;
   width: 288px;
   height: 160px;
 }
-.price{
+.price {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 48px;
 }
-.input{
+.input {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.price-input{
+.price-input {
   width: 143px;
   height: 48px;
   border-radius: 4px;
 }
-.range-input{
+.range-input {
   width: 287px;
 }
 .button-apply {
@@ -614,12 +608,18 @@ background-position: center top 80px;
   height: 36px;
   padding: 8px 57px;
 }
+.catalog-hotels-sedona{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px 70px 60px;
+}
 .search-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 70px 0;
 }
 .search-title {
   font-size: 30px;
@@ -644,10 +644,11 @@ background-position: center top 80px;
   gap: 8px;
 }
 .show-icon {
-   display: flex;
+  display: flex;
   flex-direction: row;
   gap: 8px;
-}.button-show {
+}
+.button-show {
   width: 48px;
   height: 48px;
   background-color: #ffffff;
@@ -657,17 +658,20 @@ background-position: center top 80px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
-.show-table{
+.show-table {
   border: 2px solid #000000;
   border-radius: 4px;
 }
-.catalog-column{
+.catalog-column {
   width: 1060px;
   height: 896px;
-  padding-top: 40px;
-  padding-right: 70px;
-  padding-left: 70px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style-type: none;
 }
 .hotels-list {
   display: flex;
@@ -678,36 +682,40 @@ background-position: center top 80px;
   margin: 0;
   padding: 0;
 }
-
+.hotels-list li:nth-child(3n) {
+  row-gap: 0;
+}
 .hotels-card {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   width: 340px;
   height: 438px;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
+  gap: 16px;
+  box-sizing: border-box;
 }
 .hotels-image {
   object-fit: cover;
-  padding: 20px 20px 16px;
 }
 .hotels-card-link {
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
+  padding-top: 20px;
 }
 .hotels-card-title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   margin: 0;
-  padding: 0 20px 16px;
+  width: 300px;
+  padding-top: 16px;
 }
 .type-price {
   display: flex;
   column-gap: 20px;
-  padding: 0 20px 16px;
 }
 .hotels-card-type {
   display: inline-block;
@@ -718,12 +726,12 @@ background-position: center top 80px;
   display: inline-block;
   margin: 0;
   width: 140px;
+  text-align: end;
 }
 .link-button {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  padding: 0 20px 16px;
 }
 .hotels-card-more {
   background-color: #756157;
@@ -731,27 +739,65 @@ background-position: center top 80px;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 4px;
+  width: 140px;
+  height: 36px;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
 }
-.button + .hotels-card-favorites {
+.hotels-card-favorites {
   background-color: #82b3d3;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 4px;
+  width: 140px;
+  height: 36px;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
 }
-.button + .hotels-card-favorites-checked {
+.hotels-card-favorites-checked {
   background-color: #7db54f;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 4px;
+  width: 140px;
+  height: 36px;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
 }
 .image-rate {
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 20px;
-  padding: 0 20px 20px;
 }
 .rating-stars {
   display: block;
@@ -772,17 +818,40 @@ background-position: center top 80px;
   width: 140px;
   height: 37px;
 }
+.pagination{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style-type: none;
+  gap: 8px;
+}
 .pagination-link {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  color: #ffffff;
   background-color: #82b3d3;
   text-decoration: none;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 4px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
 }
 .pagination-current {
   color: #000000;
   background-color: #f2f2f2;
+}
+.pagination-ellipsis{
+  background-color: transparent;
+  color: #000000;
 }
 .white-background {
   background-image: none;
@@ -790,4 +859,7 @@ background-position: center top 80px;
 }
 .subscribe-black {
   color: #000000;
+}
+.subscribe-grey{
+  color: #333333;
 }
