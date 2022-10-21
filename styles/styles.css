@@ -21,7 +21,6 @@ html {
 }
 
 body {
-  width: 1200px;
   margin: 0;
   min-height: 100%;
   font-size: 18px;
@@ -161,7 +160,7 @@ button {
 
 .section-description {
   text-align: center;
-margin: 69px 275px 90px;
+margin: 69px 0 90px;
 }
 .sedona-description {
   font-size: 22px;
@@ -184,6 +183,7 @@ margin: 69px 275px 90px;
   justify-content: space-between;
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .advantages-item {
@@ -208,28 +208,48 @@ margin: 69px 275px 90px;
   font-weight: 700;
   text-transform: uppercase;
   padding-top: 182px;
+  padding-bottom: 30px;
+  margin: 0;
 }
-
+hr{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 60px;
+  opacity: 0.3;
+}
 .flex-box {
   width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .benefits-flex-box {
   width: 400px;
-  height: 384px;
 }
 .white {
   padding-top: 92px;
+  width: 175px;
+  margin: 0;
 }
 
 .black {
   padding-top: 103px;
+  width: 175px;
+  margin: 0;
+  text-align: center;
 }
 
 .advantages-description {
   font-weight: 400;
-  padding: 0 85px 102px;
+  padding: 0 85px 121px;
+  margin: 0;
 }
-
+.advantages-description-item{
+  font-weight: 400;
+  padding: 0 85px 111px;
+  margin: 0;
+}
 .vector-house {
   background-image: url("../images/cottadge.svg");
   background-repeat: no-repeat;
@@ -285,11 +305,11 @@ margin: 69px 275px 90px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 406px;
   text-align: center;
 }
 .interest {
   width: 297px;
+  padding-top: 96px;
   padding-bottom: 20px;
   text-transform: uppercase;
   margin: 0;
@@ -305,6 +325,7 @@ margin: 69px 275px 90px;
   width: 375px;
   height: 52px;
   margin-top: 54px;
+  margin-bottom: 96px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -334,7 +355,6 @@ margin: 69px 275px 90px;
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  height: 415px auto;
   text-align: center;
   margin: 0;
 }
@@ -344,7 +364,7 @@ margin: 69px 275px 90px;
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
-  padding-top: 94px;
+  padding-top: 96px;
   padding-bottom: 20px;
   margin: 0;
   width: 404px;
@@ -394,7 +414,6 @@ margin: 69px 275px 90px;
   justify-content: space-between;
   align-items: center;
   width: 1060px;
-  height: 120px;
   margin: 0;
   padding: 45px 70px 35px;
 }
@@ -439,7 +458,6 @@ margin: 69px 275px 90px;
   background-size: cover;
   background-repeat: no-repeat;
   box-sizing: border-box;
-  height: 412px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -458,15 +476,14 @@ margin: 69px 275px 90px;
 .header {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
-  height: 113px;
+  padding-bottom: 40px;
 }
 .sedona-hotels-title {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
   margin: 0;
-  margin-bottom: 8px;
+  padding-bottom: 8px;
 }
 
 .breadcrumbs {
@@ -477,7 +494,6 @@ margin: 69px 275px 90px;
   padding: 0;
   margin: 0;
   width: 114px;
-  height: 21px;
   gap: 11px;
 }
 
@@ -493,15 +509,13 @@ margin: 69px 275px 90px;
 
 .breadcrumbs-link-hotels {
   width: 73px;
-  height: 21px;
+  font-size: 16px;
 }
 .catalog-main-filter {
   display: flex;
-  justify-content: space-between;
-  gap: 167px;
+  gap: 140px;
 }
 .catalog-filter {
-  height: 149px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -517,6 +531,8 @@ margin: 69px 275px 90px;
 .catalog-filter-title {
   display: block;
   padding-bottom: 32px;
+  font-size: 20px;
+  line-height: 24px;
 }
 .catalog-filter-list {
   list-style-type: none;
@@ -531,20 +547,18 @@ margin: 69px 275px 90px;
   display: flex;
   gap: 16px;
   width: 115px;
-  height: 23px;
+  line-height: 23px;
 }
 .catalog-filter-type-house {
   display: flex;
   flex-direction: column;
   width: 150px;
-  height: 157px;
 }
 
 .filter-price {
   display: flex;
   gap: 70px;
   padding: 0;
-  height: 148px;
 }
 .catalog-filter-price {
   display: flex;
@@ -558,20 +572,23 @@ margin: 69px 275px 90px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 48px;
+  gap: 36px;
 }
 .input {
   display: flex;
   justify-content: space-between;
+  gap: 2px;
+}
+.control-input{
+  margin: 0;
 }
 .price-input {
   width: 143px;
   height: 48px;
   border-radius: 4px;
+  box-sizing: border-box;
 }
-.range-input {
-  width: 287px;
-}
+
 .button-apply {
   display: flex;
   flex-direction: column;
@@ -647,7 +664,6 @@ margin: 69px 275px 90px;
 }
 .catalog-column {
   width: 1060px;
-  height: 896px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
