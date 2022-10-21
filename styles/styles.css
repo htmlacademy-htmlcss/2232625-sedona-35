@@ -21,11 +21,7 @@ html {
 }
 
 body {
-  width: 1200px;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   min-height: 100%;
   font-size: 18px;
   line-height: 21px;
@@ -36,7 +32,6 @@ body {
 }
 .page-header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-self: auto;
 }
@@ -92,11 +87,9 @@ button {
 
 .navigation-list {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 339px;
-  height: 64px;
   margin: 0;
   margin-left: 30px;
   padding: 0;
@@ -115,22 +108,19 @@ button {
   position: relative;
 }
 .homepage {
-  height: 64px;
-  width: 100px;
+  min-width: 100px;
   text-align: center;
   vertical-align: middle;
   line-height: 64px;
 }
 .about-sedone {
-  width: 114px;
-  height: 64px;
+  min-width: 114px;
   text-align: center;
   vertical-align: middle;
   line-height: 64px;
 }
 .hotels {
-  width: 125px;
-  height: 64px;
+  min-width: 125px;
   text-align: center;
   vertical-align: middle;
   line-height: 64px;
@@ -140,7 +130,7 @@ button {
   align-items: center;
   max-width: 268px;
   margin: 0;
-  padding: 0 70px 0 285px;
+  padding-left:285px;
 }
 
 .page-main {
@@ -156,8 +146,6 @@ button {
   justify-content: space-around;
   align-content: center;
   color: #000000;
-  height: 352px;
-  width: 458px;
   padding: 51px 371px 25px;
 }
 .main-header {
@@ -165,17 +153,19 @@ button {
   line-height: 36px;
   font-weight: 700;
 }
+.description{
+  margin: 0;
+  margin-bottom: 25px;
+}
 
 .section-description {
-  width: 650px;
-  height: 123px;
   text-align: center;
-
-  padding: 69px 275px 90px;
+margin: 69px 0 90px;
 }
 .sedona-description {
   font-size: 22px;
   line-height: 26px;
+  margin: 0;
 }
 
 .advantages {
@@ -189,17 +179,16 @@ button {
 
 .advantages-list {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .advantages-item {
   text-align: center;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
@@ -219,29 +208,48 @@ button {
   font-weight: 700;
   text-transform: uppercase;
   padding-top: 182px;
+  padding-bottom: 30px;
+  margin: 0;
 }
-
+hr{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 60px;
+  opacity: 0.3;
+}
 .flex-box {
   width: 400px;
-  height: 384px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .benefits-flex-box {
   width: 400px;
-  height: 384px;
 }
 .white {
   padding-top: 92px;
+  width: 175px;
+  margin: 0;
 }
 
 .black {
   padding-top: 103px;
+  width: 175px;
+  margin: 0;
+  text-align: center;
 }
 
 .advantages-description {
   font-weight: 400;
-  padding: 0 85px 102px;
+  padding: 0 85px 121px;
+  margin: 0;
 }
-
+.advantages-description-item{
+  font-weight: 400;
+  padding: 0 85px 111px;
+  margin: 0;
+}
 .vector-house {
   background-image: url("../images/cottadge.svg");
   background-repeat: no-repeat;
@@ -297,11 +305,11 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 406px;
   text-align: center;
 }
 .interest {
   width: 297px;
+  padding-top: 96px;
   padding-bottom: 20px;
   text-transform: uppercase;
   margin: 0;
@@ -317,6 +325,7 @@ button {
   width: 375px;
   height: 52px;
   margin-top: 54px;
+  margin-bottom: 96px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -346,7 +355,6 @@ button {
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  height: 415px auto;
   text-align: center;
   margin: 0;
 }
@@ -356,7 +364,7 @@ button {
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
-  padding-top: 94px;
+  padding-top: 96px;
   padding-bottom: 20px;
   margin: 0;
   width: 404px;
@@ -406,7 +414,6 @@ button {
   justify-content: space-between;
   align-items: center;
   width: 1060px;
-  height: 120px;
   margin: 0;
   padding: 45px 70px 35px;
 }
@@ -451,9 +458,11 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   box-sizing: border-box;
-  height: 412px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0;
-  padding: 0;
+  padding: 35px 70px 70px;
 }
 .hotels-filter {
   width: 1060px;
@@ -467,27 +476,24 @@ button {
 .header {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
-  height: 113px;
+  padding-bottom: 40px;
 }
 .sedona-hotels-title {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
   margin: 0;
-  margin-bottom: 8px;
+  padding-bottom: 8px;
 }
 
 .breadcrumbs {
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   list-style-type: none;
   padding: 0;
   margin: 0;
   width: 114px;
-  height: 21px;
   gap: 11px;
 }
 
@@ -503,16 +509,13 @@ button {
 
 .breadcrumbs-link-hotels {
   width: 73px;
-  height: 21px;
+  font-size: 16px;
 }
 .catalog-main-filter {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 167px;
+  gap: 140px;
 }
 .catalog-filter {
-  height: 149px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -528,6 +531,8 @@ button {
 .catalog-filter-title {
   display: block;
   padding-bottom: 32px;
+  font-size: 20px;
+  line-height: 24px;
 }
 .catalog-filter-list {
   list-style-type: none;
@@ -540,23 +545,20 @@ button {
 
 .control {
   display: flex;
-  flex-direction: row;
   gap: 16px;
   width: 115px;
-  height: 23px;
+  line-height: 23px;
 }
 .catalog-filter-type-house {
   display: flex;
   flex-direction: column;
   width: 150px;
-  height: 157px;
 }
 
 .filter-price {
   display: flex;
   gap: 70px;
   padding: 0;
-  height: 148px;
 }
 .catalog-filter-price {
   display: flex;
@@ -570,21 +572,23 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 48px;
+  gap: 36px;
 }
 .input {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  gap: 2px;
+}
+.control-input{
+  margin: 0;
 }
 .price-input {
   width: 143px;
   height: 48px;
   border-radius: 4px;
+  box-sizing: border-box;
 }
-.range-input {
-  width: 287px;
-}
+
 .button-apply {
   display: flex;
   flex-direction: column;
@@ -617,7 +621,6 @@ button {
 }
 .search-row {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -638,16 +641,11 @@ button {
   width: 160px;
   height: 48px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   padding-left: 70px;
   gap: 8px;
 }
-.show-icon {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-}
+
 .button-show {
   width: 48px;
   height: 48px;
@@ -666,25 +664,12 @@ button {
 }
 .catalog-column {
   width: 1060px;
-  height: 896px;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
   list-style-type: none;
 }
-.hotels-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.hotels-list li:nth-child(3n) {
-  row-gap: 0;
-}
+
 .hotels-card {
   display: flex;
   flex-direction: column;
@@ -820,7 +805,6 @@ button {
 }
 .pagination{
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
   list-style-type: none;
   gap: 8px;
