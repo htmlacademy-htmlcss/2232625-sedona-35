@@ -125,12 +125,15 @@ button {
   vertical-align: middle;
   line-height: 64px;
 }
+.active {
+  border: 2px solid #756257;
+}
 .navigation-user {
   display: flex;
   align-items: center;
   max-width: 268px;
   margin: 0;
-  padding-left:285px;
+  padding-left: 285px;
 }
 
 .page-main {
@@ -153,14 +156,14 @@ button {
   line-height: 36px;
   font-weight: 700;
 }
-.description{
+.description {
   margin: 0;
   margin-bottom: 25px;
 }
 
 .section-description {
   text-align: center;
-margin: 69px 0 90px;
+  margin: 69px 0 90px;
 }
 .sedona-description {
   font-size: 22px;
@@ -178,9 +181,15 @@ margin: 69px 0 90px;
 }
 
 .advantages-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0;
+  grid-template-areas:
+    ". sedona-city sedona-city"
+    ". . ."
+    "devils-bridge devils-bridge ."
+    ". . .";
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -211,7 +220,7 @@ margin: 69px 0 90px;
   padding-bottom: 30px;
   margin: 0;
 }
-hr{
+hr {
   margin-top: 30px;
   margin-bottom: 30px;
   width: 60px;
@@ -245,7 +254,7 @@ hr{
   padding: 0 85px 121px;
   margin: 0;
 }
-.advantages-description-item{
+.advantages-description-item {
   font-weight: 400;
   padding: 0 85px 111px;
   margin: 0;
@@ -278,6 +287,7 @@ hr{
   background-color: #83b3d3;
   margin: 0;
   display: block;
+  grid-area: sedona-city;
 }
 
 .benefits-white {
@@ -294,6 +304,7 @@ hr{
 .devils-bridge {
   background-color: #ffffff;
   background-size: 100% auto;
+  grid-area: devils-bridge;
 }
 .sedona-sity img,
 .devils-bridge img {
@@ -579,7 +590,7 @@ hr{
   justify-content: space-between;
   gap: 2px;
 }
-.control-input{
+.control-input {
   margin: 0;
 }
 .price-input {
@@ -612,7 +623,7 @@ hr{
   height: 36px;
   padding: 8px 57px;
 }
-.catalog-hotels-sedona{
+.catalog-hotels-sedona {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -664,8 +675,8 @@ hr{
 }
 .catalog-column {
   width: 1060px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   list-style-type: none;
 }
@@ -803,7 +814,7 @@ hr{
   width: 140px;
   height: 37px;
 }
-.pagination{
+.pagination {
   display: flex;
   justify-content: flex-start;
   list-style-type: none;
@@ -833,7 +844,7 @@ hr{
   color: #000000;
   background-color: #f2f2f2;
 }
-.pagination-ellipsis{
+.pagination-ellipsis {
   background-color: transparent;
   color: #000000;
 }
@@ -844,6 +855,6 @@ hr{
 .subscribe-black {
   color: #000000;
 }
-.subscribe-grey{
+.subscribe-grey {
   color: #333333;
 }
