@@ -57,7 +57,7 @@
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link search" href="#">
                 <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M18.5 17.0083L14.8 13.3287C15.8 12.0359 16.5 10.3453 16.5 8.4558C16.5 4.08011 12.9 0.5 8.5 0.5C4.1 0.5 0.5 4.17956 0.5 8.55525C0.5 12.9309 4.1 16.511 8.5 16.511C10.3 16.511 12 15.9144 13.4 14.8204L17.1 18.5L18.5 17.0083ZM8.5 14.5221C5.2 14.5221 2.5 11.837 2.5 8.55525C2.5 5.27348 5.2 2.5884 8.5 2.5884C11.8 2.5884 14.5 5.27348 14.5 8.55525C14.5 11.837 11.8 14.5221 8.5 14.5221Z"
@@ -100,12 +100,8 @@
                     <span class="visually-hidden">Главная</span>
                   </a>
                 </li>
-                <li class="breadcrumbs-item">
-                  <svg width="6" height="10" viewBox="0 0 8 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M6.91526 9.96875L2.16526 5.71875C1.91526 5.46875 1.41526 5.46875 1.04026 5.71875C0.665263 5.96875 0.790263 6.46875 1.04026 6.71875L5.16526 10.4688L1.16526 14.2188C0.915263 14.4688 0.915263 14.9688 1.16526 15.2188C1.16526 15.3438 1.54026 15.4688 1.66526 15.4688C1.79026 15.4688 2.04026 15.3438 2.16526 15.2188L6.91526 10.9688C7.29026 10.7188 7.29026 10.2188 6.91526 9.96875Z"
-                      fill="white" />
-                  </svg>
+                <li class="breadcrumbs-item strelka">
+
                 </li>
                 <li class="breadcrumbs-item">
                   <a class="breadcrumbs-link breadcrumbs-link-hotels">Гостиницы</a>
@@ -161,7 +157,7 @@
                       <label class="control">
                         <input class="visually-hidden control-input" type="radio" name="house-type" value="apartments">
                         <span class="control-mark"></span>
-                        <span class="control-label">Аппартаменты</span>
+                        <span class="control-label">Апартаменты</span>
                       </label>
                     </li>
                   </ul>
@@ -172,13 +168,15 @@
                   <span class="catalog-filter-title">Стоимость, ₽:</span>
                   <div class="range">
                     <div class="range-wrapper-inputs">
-                      <input class="price-input price-input-ot" placeholder="от" type="text" name="price-min"
-                        id="price-min" value="0">
-                      <input class="price-input price-input-do" placeholder="до" type="text" name="price-max"
-                        id="price-max" value="9000">
+                      <p class="input-ot">
+                      <input class="price-input price-input-ot" placeholder="0" type="text" name="price-min"
+                        id="price-min"></p>
+                        <p class="input-do">
+                      <input class="price-input price-input-do" placeholder="9000" type="text" name="price-max"
+                        id="price-max"></p>
                     </div>
                     <div class="range-scale">
-                      <div class="range-bar" style="left: 1px; width: 226px">
+                      <div class="range-bar" style="left: 1px; width: 214px">
                         <button class="range-toggle toggle-min">
                           <span class="visually-hidden">Изменить минимальную цену.</span>
                         </button>
@@ -205,7 +203,7 @@
                 <option value="popular">Сначала дешёвые</option>
               </select>
               <div class="show-icon">
-                <a class="button-show" href="#">
+                <a class="button-show table" href="#">
                   <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_53802_55)">
                       <path d="M4 0H0V6H4V0Z" fill="black" />
@@ -463,7 +461,7 @@
           </section>
           <section class="phone">
             <h2 class="visually-hidden">phone</h2>
-            <span class="phone-number">+7 (812) 812-12-12</span>
+            <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </section>
           <section class="logo-html-academy">
             <h2 class="visually-hidden">HTML-Academy</h2>
