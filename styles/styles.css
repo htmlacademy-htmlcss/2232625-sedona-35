@@ -671,11 +671,12 @@ hr {
 }
 .trip-start,
 .trip-end {
-  width: 440px;
+  width: 417px;
   height: 48px;
   background: #f2f2f2;
   border: none;
   border-radius: 4px;
+  padding-left: 20px;
 }
 .trip-start::placeholder,
 .trip-end::placeholder {
@@ -683,7 +684,6 @@ hr {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  padding-left: 20px;
   font-family: "PT Sans";
 }
 .trip-start:hover,
