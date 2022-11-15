@@ -265,7 +265,7 @@ body {
   padding-bottom: 30px;
   margin: 0;
 }
-hr {
+.hr {
   margin-top: 30px;
   margin-bottom: 30px;
   width: 60px;
@@ -658,7 +658,7 @@ hr {
   font-size: 16px;
   line-height: 21px;
   color: #ff5757;
-  font-family: "PT SANS";
+  font-family: "PT SANS", sans-serif;
   font-weight: 400;
 }
 .date-end::before {
@@ -670,7 +670,7 @@ hr {
   height: 21px;
   font-size: 16px;
   line-height: 21px;
-  font-family: "PT SANS";
+  font-family: "PT SANS", sans-serif;
   font-weight: 400;
 }
 
