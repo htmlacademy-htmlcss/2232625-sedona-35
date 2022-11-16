@@ -577,7 +577,7 @@ body {
 .modal-container-close {
   display: none;
 }
-.modal-container:target {
+.modal-container{
   position: fixed;
   top: 0;
   left: 0;
